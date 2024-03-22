@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('/level', [LevelController::class,'index']);
 Route::get('/Kategori', [KategoriController::class, 'index']);
 Route::get('/user', [UserController::class, 'index']);
+
