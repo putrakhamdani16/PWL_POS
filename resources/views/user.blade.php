@@ -7,7 +7,7 @@
   <title>Data User</title>
 </head>
 <body>
-  <table border="1">
+  {{-- <table border="1">
     <tr>
       <th>junlah pengguna</th>
     </tr>
@@ -16,13 +16,23 @@
         {{$data}}
       </td>
     </tr>
+  </table> --}}
+  <h1>Data User</h1>
+  <table border="1" cellpadding="2" cellspacing="0">
+    <tr>
+      <th>ID</th>
+      <th>username</th>
+      <th>Nama</th>
+      <th>ID Level Pengguna</th>
+    </tr>
+    <tr>
+      <td>{{$data->user_id}}</td>
+      <td>{{$data->username}}</td>
+      <td>{{$data->nama}}</td>
+      <td>{{$data->level_id}}</td>
+    </tr>
   </table>
-  {{-- <tr>
-    <th>ID</th>
-    <th>username</th>
-    <th>Nama</th>
-    <th>ID Level Pengguna</th>
-  </tr> --}}
+
   {{-- @foreach ($data as $d )
   <tr>
     <td>{{$data->user_id}}</td>
